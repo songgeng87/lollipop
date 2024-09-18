@@ -1,0 +1,21 @@
+.container{
+    background-image: url("/images/planet.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+
+    .shadow-inner{
+        --tw-shadow: inset 0 0 15px 0 #FC15EF;
+        --tw-shadow-colored: inset 0 0 15px 0 var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    .gradient {
+        background: radial-gradient(#5A0A93 0%, #4D0A91 35%, #320A8C 95%);
+    }
+
+    .banner{
+        background-image: url("/images/banner.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
