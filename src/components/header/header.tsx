@@ -26,7 +26,7 @@ export default function Header() {
         <ul className="menu-horizontal rounded-box px-16 bg-[#320A8C] text-white gap-16 flex-nowrap">
             <li className='hover:cursor-pointer active:text-black visited:text-black'><Link href="/home">Home</Link></li>
             <li className='hover:cursor-pointer active:text-black visited:text-black'><Link href="/about">About</Link></li>
-            <li className='hover:cursor-pointer active:text-black visited:text-black'><Link href="/builders">Builders</Link></li>
+            <li className='hover:cursor-pointer active:text-black visited:text-black'> Builders</li>
         </ul>
         <div className='flex items-center ml-[-192px]'>
             <Image width={168} height={42} src="/images/logo.png" alt="logo" />

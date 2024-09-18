@@ -1,5 +1,4 @@
 "use client"
-import { useEffect, useRef, useState } from "react";
 import clsx from "clsx"
 import styles from './layout.module.scss';
 import Link from "next/link";
@@ -95,7 +94,7 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
                 <p className="text-[#0AEAF1]">NETWORK EXTENSION SERVICE</p>
                 <p>WITH <span className="text-[#FC15EF]">CRYPTOGRAPHIC</span></p>
                 <p className="text-[#FC15EF]">SETTLEMENT PROTOCOLS.</p>
-                <p className="text-lg font-thin mt-8">Customizable, Decenttralized & infrastructure Compatible</p>
+                <p className="text-xl font-thin mt-8">Customizable, Decenttralized & infrastructure Compatible</p>
             </div>
         </div>
         <div className="mt-16 px-16">
