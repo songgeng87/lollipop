@@ -51,20 +51,20 @@ const Carousel = ({ images }: { images: { src: string, alt: string }[] }) => {
       </div>
       {
         currentIndex === 0 && <div className="text-white text-2xl w-1/2">
-          <p className='pb-8 text-3xl'>Use SMT for secured settlement protocoles</p>
+          <p className='pb-12 text-3xl'>Use SMT for secured settlement protocoles</p>
           We proposed integration a Sparse Merkle Tree [SMT] into the Solana Client to serve as a global state tree for network extensions.
         </div>
       }
       {
         currentIndex === 1 && <div className="text-white text-2xl w-1/2">
-          <p className='pb-8 text-3xl'>Solana-native & Enhanced Decentralization</p>
+          <p className='pb-12 text-3xl'>Solana-native & Enhanced Decentralization</p>
 
           The State and data commitment are submitted to the Solana network, sothe validator can check them both independently.
         </div>
       }
       {
         currentIndex === 2 && <div className="text-white text-2xl w-1/2">
-          <p className='pb-8 text-3xl'>SVM Portable by JAM</p>
+          <p className='pb-12 text-3xl'>SVM Portable by JAM</p>
 
           The State and data commitment are submitted to the Solana network, sothe validator can check them both independently.
         </div>

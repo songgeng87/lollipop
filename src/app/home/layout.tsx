@@ -86,7 +86,7 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
     //     }
     // }, [])
 
-    return <div className={clsx(styles.container, "bg-[#320A8C] mt-[80px] w-screen")}>
+    return <div className={clsx(styles.container, "bg-[#320A8C] mt-[80px] w-screen text-[16px] ")}>
         <div className={clsx("flex px-16 pt-16 overflow-x-hidden")}>
             <div className="flex flex-col gap-1 text-4xl font-bold text-white pt-10">
                 <p>THE FIRST</p>
@@ -127,7 +127,7 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
             </div>
         </div> */}
         <div className="bg-[#5A0A93] min-h-screen px-16 p-24">
-            <div className="flex gap-4 rounded-2xl h-[338px]">
+            <div className="flex gap-4 rounded-2xl h-[378px]">
                 <Card images={["/images/card1.png", "/images/card-click1.png"]} title='Cryptographic Settlement Protocols' content='Our cryptographic settlement protocols eliminate the centralization risks, while inheriting the robust security of the Solana mainnet' />
                 <Card images={["/images/card2.png", "/images/card-click2.png"]} title="Solana-Native NES" content="As a Solana-native NES (Network Extension Stack), we enable direct integration of native Solana wallets and tools for developers, and facilitates parallel processing of SVM for enhanced performance." />
                 <Card images={["/images/card3.png", "/images/card-click3.png"]} title="Limitless TVL" content="Polkadot's JAM as an optional platform for shared sequencerDA and stateless validator provide trustless ground for Network Extensions' limitless TVL." />

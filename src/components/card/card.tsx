@@ -11,7 +11,7 @@ export default function Card({ images, title, content }: { images: string[], tit
         setIsHover(val);
     }
 
-    return <div onMouseEnter={() => { changeHoverState(true) }} onMouseLeave={() => { changeHoverState(false) }} className={clsx(styles['shadow-inner'], (isHover ? ['p-4'] : 'p-6'), "pb-16 border-[#FC15EF] border text-white flex flex-col items-center text-center rounded-3xl w-[300px] bg-transparent transition-transform hover:scale-125 hover:border-[#0AEAF1] hover:bg-[rgba(50,10,140,.4)]")}>
+    return <div onMouseEnter={() => { changeHoverState(true) }} onMouseLeave={() => { changeHoverState(false) }} className={clsx(styles['shadow-inner'], (isHover ? ['p-4','pt-12'] : 'p-6'), "pb-16 border-[#FC15EF] border text-white flex flex-col items-center text-center rounded-3xl w-[300px] bg-transparent transition-transform hover:scale-125 hover:border-[#0AEAF1] hover:bg-[rgba(50,10,140,.4)]")}>
         {
             isHover ? <Image width={72} height={72} src={images[1]} alt="img"></Image> : <Image width={64} height={64} src={images[0]} alt="img"></Image>
         }
