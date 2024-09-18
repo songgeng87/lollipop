@@ -128,11 +128,11 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
         </div> */}
         <div className="bg-[#5A0A93] min-h-screen px-16 p-24">
             <div className="flex gap-4 rounded-2xl h-[378px]">
-                <Card images={["/images/card1.png", "/images/card-click1.png"]} title='Cryptographic Settlement Protocols' content='Our cryptographic settlement protocols eliminate the centralization risks, while inheriting the robust security of the Solana mainnet' />
-                <Card images={["/images/card2.png", "/images/card-click2.png"]} title="Solana-Native NES" content="As a Solana-native NES (Network Extension Stack), we enable direct integration of native Solana wallets and tools for developers, and facilitates parallel processing of SVM for enhanced performance." />
-                <Card images={["/images/card3.png", "/images/card-click3.png"]} title="Limitless TVL" content="Polkadot's JAM as an optional platform for shared sequencerDA and stateless validator provide trustless ground for Network Extensions' limitless TVL." />
-                <Card images={["/images/card4.png", "/images/card-click4.png"]} title="Separate & Privacy" content="Network extensions can offer customized, isolated pools for computation and privacy, while maintaining value and security with Layer 1." />
-                <Card images={["/images/card5.png", "/images/card-click5.png"]} title="Shared Economy" content="Our innovative value-redistribution economy model, coupled with elastic inflation mechanism, ensures the long-term sustainability and growth of our ecosystem." />
+                <Card images={["/images/card1.png", "/images/card-click1.png"]} title='CRYPTOGRAPHIC SETTLEMENT PROTOCOLS' content='Our cryptographic settlement protocols eliminate the centralization risks, while inheriting the robust security of the Solana mainnet' />
+                <Card images={["/images/card2.png", "/images/card-click2.png"]} title="SOLANA-NATIVE NES" content="As a Solana-native NES (Network Extension Stack), we enable direct integration of native Solana wallets and tools for developers, and facilitates parallel processing of SVM for enhanced performance." />
+                <Card images={["/images/card3.png", "/images/card-click3.png"]} title="LIMITLESS TVL" content="Polkadot's JAM as an optional platform for shared sequencerDA and stateless validator provide trustless ground for Network Extensions' limitless TVL." />
+                <Card images={["/images/card4.png", "/images/card-click4.png"]} title="SEPARATE & PRIVACY" content="Network extensions can offer customized, isolated pools for computation and privacy, while maintaining value and security with Layer 1." />
+                <Card images={["/images/card5.png", "/images/card-click5.png"]} title="SHARED ECONOMY" content="Our innovative value-redistribution economy model, coupled with elastic inflation mechanism, ensures the long-term sustainability and growth of our ecosystem." />
             </div>
             <div className={clsx(styles['shadow-inner'], "w-full mt-24 border-[#FC15EF] border rounded-2xl flex items-center p-16 gap-8")}>
                 <Carousel images={[
