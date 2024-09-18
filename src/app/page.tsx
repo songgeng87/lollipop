@@ -1,6 +1,6 @@
 
-export default function Home() {
+export default function RootPage() {
   return (
-    <div>home</div>
+    <></>
   );
 }

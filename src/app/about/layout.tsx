@@ -33,7 +33,7 @@ export default function AboutLayout() {
                     </div>
                 </div>
                 <div onMouseEnter={() => {setHoverPink(true)}} onMouseLeave={() => {setHoverPink(false)}}  className={clsx(styles['shadow-inner'], "border-[#FC15EF] border p-16 rounded-2xl max-h-[300px]")}>
-                    <p className="text-2xl">Write Once, Deploy Anywhere</p>
+                    <p className="text-2xl">&ldquo;Write Once, Deploy Anywhere&rdquo;</p>
                     <p className="mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi, natus, ullam a ipsum cum, corporis voluptate quo odio omnis nam repudiandae error! Laboriosam architecto quibusdam incidunt. Deserunt, rerum unde.</p>
                 </div>
             </div>

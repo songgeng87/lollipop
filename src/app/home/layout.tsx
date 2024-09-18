@@ -1,5 +1,4 @@
 "use client"
-//import { useEffect, useRef, useState } from "react";
 import clsx from "clsx"
 import styles from './layout.module.scss';
 import Link from "next/link";
@@ -10,7 +9,7 @@ import Carousel from "@/components/carousel/carousel";
 import Footer from "@/components/footer/footer";
 // import Carousel from "@/components/carousel/carousel";
 
-export default function HomeLayout({ children} : {children: React.ReactNode}) {
+export default function HomeLayout({ children }: { children: React.ReactNode }) {
     // 当前显示容器下标
     // const [currIndex, setCurrIndex] = useState(0);
     // 缓存上一次的scrollY数据
@@ -65,11 +64,11 @@ export default function HomeLayout({ children} : {children: React.ReactNode}) {
     //         setCurrIndex(index)
     //     }
     //     // 设置元素位置
-    
-    
+
+
     //     // element.style.position = 'absolute';
-    
-    
+
+
     //     // element.style.top = scrollPosition + 'px';
     // }
 
@@ -87,7 +86,7 @@ export default function HomeLayout({ children} : {children: React.ReactNode}) {
     //     }
     // }, [])
 
-    return <div className={clsx(styles.container, "bg-[#320A8C] mt-[80px] w-screen")}>
+    return <div className={clsx(styles.container, "bg-[#320A8C] mt-[80px] w-screen text-[16px] ")}>
         <div className={clsx("flex px-16 pt-16 overflow-x-hidden")}>
             <div className="flex flex-col gap-1 text-4xl font-bold text-white pt-10">
                 <p>THE FIRST</p>
@@ -95,13 +94,15 @@ export default function HomeLayout({ children} : {children: React.ReactNode}) {
                 <p className="text-[#0AEAF1]">NETWORK EXTENSION SERVICE</p>
                 <p>WITH <span className="text-[#FC15EF]">CRYPTOGRAPHIC</span></p>
                 <p className="text-[#FC15EF]">SETTLEMENT PROTOCOLS.</p>
-                <p className="text-lg font-thin mt-8">Customizable, Decenttralized & infrastructure Compatible</p>
+                <p className="text-xl font-thin mt-8">Customizable, Decenttralized & infrastructure Compatible</p>
             </div>
         </div>
         <div className="mt-16 px-16">
-        <button className="w-[200px] h-[60px] active:bg-[#FC15EF] hover:bg-[#FC15EF] border-[#0AEAF1] border border-b-[6px] text-white rounded-full px-8 py-4 cursor-pointer bg-[#5A0A93] active:opacity-80">
-            <Link href="/">BOOK A DEMO</Link>
-                </button>
+            <button className="w-[200px] h-[60px] active:bg-[#FC15EF] hover:bg-[#FC15EF] border-[#0AEAF1] border border-b-[6px] text-white rounded-full px-8 py-4 cursor-pointer bg-[#5A0A93] active:opacity-80">
+
+                <Link target="_blank" href="https://forms.gle/s7AEykXt6wUExP948" >BOOK A DEMO</Link>
+
+            </button>
         </div>
         <div className={clsx(styles.gradient, "w-full mt-[156px] flex justify-center gap-16 p-24 border-t border-b border-[#1E1E1E]")}>
             <Image width={1174} height={581} src="/images/VideoPage.png" alt="video"></Image>
@@ -126,20 +127,20 @@ export default function HomeLayout({ children} : {children: React.ReactNode}) {
             </div>
         </div> */}
         <div className="bg-[#5A0A93] min-h-screen px-16 p-24">
-            <div className="flex gap-4 rounded-2xl h-[448px]">
-                <Card images={["/images/card-click1.png", "/images/card-click1.png"]}/>
-                <Card images={["/images/card-click2.png", "/images/card-click2.png"]}/>
-                <Card images={["/images/card-click3.png", "/images/card-click3.png"]}/>
-                <Card images={["/images/card-click4.png", "/images/card-click4.png"]}/>
-                <Card images={["/images/card-click5.png", "/images/card-click5.png"]}/>
+            <div className="flex gap-4 rounded-2xl h-[378px]">
+                <Card images={["/images/card1.png", "/images/card-click1.png"]} title='Cryptographic Settlement Protocols' content='Our cryptographic settlement protocols eliminate the centralization risks, while inheriting the robust security of the Solana mainnet' />
+                <Card images={["/images/card2.png", "/images/card-click2.png"]} title="Solana-Native NES" content="As a Solana-native NES (Network Extension Stack), we enable direct integration of native Solana wallets and tools for developers, and facilitates parallel processing of SVM for enhanced performance." />
+                <Card images={["/images/card3.png", "/images/card-click3.png"]} title="Limitless TVL" content="Polkadot's JAM as an optional platform for shared sequencerDA and stateless validator provide trustless ground for Network Extensions' limitless TVL." />
+                <Card images={["/images/card4.png", "/images/card-click4.png"]} title="Separate & Privacy" content="Network extensions can offer customized, isolated pools for computation and privacy, while maintaining value and security with Layer 1." />
+                <Card images={["/images/card5.png", "/images/card-click5.png"]} title="Shared Economy" content="Our innovative value-redistribution economy model, coupled with elastic inflation mechanism, ensures the long-term sustainability and growth of our ecosystem." />
             </div>
-            <div className={clsx(styles['shadow-inner'],"w-full mt-24 border-[#FC15EF] border rounded-2xl flex items-center p-16 gap-8")}>
+            <div className={clsx(styles['shadow-inner'], "w-full mt-24 border-[#FC15EF] border rounded-2xl flex items-center p-16 gap-8")}>
                 <Carousel images={[
                     { src: '/images/scroll1.png', alt: 'burger' },
                     { src: '/images/scroll2.png', alt: 'burger' },
                     { src: '/images/scroll3.png', alt: 'burger' },
                     // { src: 'https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp', alt: 'burger' }
-                ]}/>
+                ]} />
             </div>
             {/* <div className={clsx(styles['shadow-inner'],"w-full mt-24 border-[#FC15EF] border rounded-2xl flex flex-col p-16 gap-8")}>
     

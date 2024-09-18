@@ -28,7 +28,7 @@ export default function Footer() {
             <div className="mt-8 flex justify-between">
                 <div className="flex gap-x-16 items-center">
                     <p className="text-white">Find us on</p>
-                    <Link href="https://x.com/LollipopHQ" className="mt-4">
+                    <Link href="https://x.com/LollipopHQ" target="_blank">
                         <Image width={32} height={32} src="/images/Twitter.png" alt="twitter" />
                     </Link>
                     <Image width={32} height={32} src="/images/DC.png" alt="dc" />
