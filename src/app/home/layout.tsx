@@ -23,14 +23,6 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
                 <p>The First Solan Native</p>
                 <p  >Network Extension Service:</p>
                 <p className="text-[#FC15EF]">Making SVM Portabl</p>
-
-                {/* <p>THE FIRST</p>
-                <p>SOLANA-NATIVE <span className="text-[#0AEAF1]">SVM-POWERED</span></p>
-                <p className="text-[#0AEAF1]">NETWORK EXTENSION SERVICE</p>
-                <p>WITH <span className="text-[#FC15EF]">CRYPTOGRAPHIC</span></p>
-                <p className="text-[#FC15EF]">SETTLEMENT PROTOCOLS.</p> */}
-                <p className="text-xl font-thin mt-8">Customizable, Decentralized & Infrastructure Compatible</p>
-{/* >>>>>>> parent of 890238b (1.10) */}
             </div>
         </div>
         <div className="mt-16 px-16">
@@ -44,7 +36,7 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
             <Image width={1174} height={581} src="/images/VideoPage.png" alt="video"></Image>
         </div>
         <div className="bg-[#5A0A93] min-h-screen px-16 p-24">
-            <div className={clsx(styles.cardBox, "flex flex-wrap justify-center min-w-[290px] gap-4 rounded-2xl")}>
+            <div className={clsx(styles.cardBox, "flex flex-wrap justify-center   gap-4 rounded-2xl")}>
                 <Card images={["/images/card1.png", "/images/card-click1.png"]} title='CRYPTOGRAPHIC SETTLEMENT' content='Our cryptographic settlement protocols eliminate the centralization risks, while inheriting the robust security of the Solana mainnet' />
                 <Card images={["/images/card2.png", "/images/card-click2.png"]} title="SOLANA-NATIVE NES" content="We enable direct integration of native Solana infrastructure for NEs built with Lollipop and facilitates parallel processing of SVM for enhanced performance." />
                 <Card images={["/images/card3.png", "/images/card-click3.png"]} title={<p>LIMITLESS <span className="block">TVL</span></p>} content="Polkadot's JAM as an optional platform for shared sequencerDA and stateless validator provide trustless ground for Network Extensions' limitless TVL." />
@@ -53,9 +45,9 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
             </div>
             <div className={clsx(styles['shadow-inner'], "w-full mt-24 min-h-[600px] border-[#FC15EF] border rounded-2xl flex items-center p-16 gap-8")}>
                 <Carousel images={[
-                    { src: '/images/scroll1.png', width: 640, height: 644, alt: '' },
+                    { src: '/images/scroll1.png', width: 640, height: 480, alt: '' },
                     { src: '/images/scroll2.png', alt: '', width: 640, height: 644 },
-                    { src: '/images/scroll3.png', alt: '', width: 640, height: 644 },
+                    { src: '/images/scroll3.png', alt: '', width: 640, height: 454 },
                 ]} />
             </div>
         </div>
