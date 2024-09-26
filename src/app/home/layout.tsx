@@ -174,7 +174,7 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
             <div className="text-white">
                 <p className="text-3xl font-bold">EXTEND SOLANA</p>
                 <p className="text-3xl font-bold">WITH LOLLIPOP</p>
-                <p className="text-white mt-8 w-[400px]">We aim to extend SOLana network by... Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ratione error similique dignissimos, ab totam consequuntur obcaecati? Hic libero nesciunt ducimus eaque fugit incidunt earum neque, accusantium et iste quod.</p>
+                <p className="text-white mt-8 w-[400px]">We aim to extend the Solana network by facilitating the deployment of Solana-native Network Extensions, moving beyond merely engaging with the SVM hype. This initiative is designed to prevent the fragmentation often seen in the EVM landscape. By focusing on RollApps instead of traditional Solana fork chain and AppChain, together we can create a unified SVM environment and ecosystem, underpinned by the security and capacities of Solana mainnet.</p>
             </div>
             <div className="grow flex flex-col items-center text-[#0AEAF1] font-bold">
                 <p className="text-xl">FAST DEPLOY A</p>

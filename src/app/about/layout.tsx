@@ -29,12 +29,12 @@ export default function AboutLayout() {
                         <div className="ml-[8px] mb-[-16px] self-end text-3xl">OUR TECHNOLOGY</div>
                     </div>
                     <div onMouseEnter={() => {setHoverBlue(true)}} onMouseLeave={() => {setHoverBlue(false)}} className={clsx(styles['shadow-inner-blue'], "border-[#0AEAF1] border p-16 rounded-2xl max-h-[300px]")}>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis pariatur enim harum ad dolor expedita, iure itaque fugit non error sint fuga ex consequuntur est quis eaque modi quas in.
+                    Lollipop is the first NES (Network Extension Stack) with cryptographic settlement protocols, extended mainnet security, and infrastructure compatibility with Solana at the same time. It is a native Solana virtual machine (SVM) stack for application-specific networks, also known as RollApps, settled on top of the Solana mainnet. This stack focuses on the Execution Layer and Settlement Protocol, leveraging Solana’s infrastructure for security and high performance. To enhance decentralization, Lollipop will use Polkadot’s JAM as an optional platform for shared sequencer, DA and stateless validator makes NE (Network Extension) on Solana ready for limitless TVL.
                     </div>
                 </div>
                 <div onMouseEnter={() => {setHoverPink(true)}} onMouseLeave={() => {setHoverPink(false)}}  className={clsx(styles['shadow-inner'], "border-[#FC15EF] border p-16 rounded-2xl max-h-[300px]")}>
                     <p className="text-2xl">&ldquo;Write Once, Deploy Anywhere&rdquo;</p>
-                    <p className="mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi, natus, ullam a ipsum cum, corporis voluptate quo odio omnis nam repudiandae error! Laboriosam architecto quibusdam incidunt. Deserunt, rerum unde.</p>
+                    <p className="mt-8">We are dedicated to bringing the best technology to everyone while reducing development difficulty and application costs. We believe that Solana’s high performance and processing speed, combined with Polkadot JAM’s decentralization and security, currently represent the best in blockchain technology. We will also continuously monitor the latest advancements to stay at the forefront of innovation.</p>
                 </div>
             </div>
         </div>
