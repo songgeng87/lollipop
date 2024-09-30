@@ -45,9 +45,9 @@ const Carousel = ({ images }: { images: { src: string, alt: string, width: numbe
           // <img src={images[currentIndex].src} alt={images[currentIndex].alt} className='h-[600px]' />
         )}
         <ul className='flex justify-center gap-4 mt-4'>
-          <li className={clsx('w-4 h-4 rounded-full cursor-pointer', (currentIndex === 0 ? ['bg-[#FC15EF]'] : ['bg-white']))} onClick={() => { changeIndex(0) }}></li>
-          <li className={clsx('w-4 h-4 rounded-full cursor-pointer', (currentIndex === 1 ? ['bg-[#FC15EF]'] : ['bg-white']))} onClick={() => { changeIndex(1) }}></li>
-          <li className={clsx('w-4 h-4 rounded-full cursor-pointer', (currentIndex === 2 ? ['bg-[#FC15EF]'] : ['bg-white']))} onClick={() => { changeIndex(2) }}></li>
+          <li className={clsx('w-2 h-2 rounded-full cursor-pointer', (currentIndex === 0 ? ['bg-[#FC15EF]'] : ['bg-white']))} onClick={() => { changeIndex(0) }}></li>
+          <li className={clsx('w-2 h-2 rounded-full cursor-pointer', (currentIndex === 1 ? ['bg-[#FC15EF]'] : ['bg-white']))} onClick={() => { changeIndex(1) }}></li>
+          <li className={clsx('w-2 h-2 rounded-full cursor-pointer', (currentIndex === 2 ? ['bg-[#FC15EF]'] : ['bg-white']))} onClick={() => { changeIndex(2) }}></li>
         </ul>
         {/* <button className='text-white text-xl font-bold absolute right-8 top-1/2' onClick={() => handleNext(currentIndex)}>{">"}</button> */}
       </div>
