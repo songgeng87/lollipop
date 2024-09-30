@@ -6,6 +6,27 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
+    .mini{
+        display: none;
+        @media screen and (max-width: 967px){
+            display: block;
+        } 
+    }
+
+    .miniFlex{
+        display: none;
+        @media screen and (max-width: 967px){
+            display: flex;
+        } 
+    }
+
+    .max{
+        display: none;
+        @media screen and (min-width: 967px){
+            display: block;
+        } 
+    }
+
     .gradient-pink {
         background: radial-gradient(#5A0A93, #FC15EF);
     }

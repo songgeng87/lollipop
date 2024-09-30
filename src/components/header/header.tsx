@@ -29,7 +29,7 @@ export default function Header() {
             <li className='hover:cursor-pointer active:text-black visited:text-black text-[16px] '> Builders</li>
         </ul>
         <div className='flex items-center ml-[-192px]'>
-            <Image width={128} height={42} src="/images/logo.png" alt="logo" />
+            <Image width={168} height={54} src="/images/logo.png" alt="logo" />
         </div>
         <div className='flex items-center mr-16'>
           

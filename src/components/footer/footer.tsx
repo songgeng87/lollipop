@@ -36,7 +36,7 @@ export default function Footer() {
                     <Image width={32} height={32} src="/images/GitHub.png" alt="github" />
                     <Image width={32} height={32} src="/images/Link.png" alt="link" />
                 </div>
-                <p className="text-white">@2024 Lolipop All rights reserved.</p>
+                <p className="text-white">@2024 Lollipop All rights reserved.</p>
             </div>
         </div>
     </footer>
