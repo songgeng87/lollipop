@@ -60,15 +60,22 @@ const Carousel = ({ images }: { images: { src: string, alt: string, width: numbe
       {
         currentIndex === 1 && <div className="text-white text-2xl w-1/2">
           <p className='pb-12 text-3xl font-bold'>SOLANA-NATIVE & ENHANCED DECENTRALIZATION</p>
-          Execution Node belt with Solana native architecture, ensuring NEs are aligned with Solana's transaction data structure.
-          Shared Sequencer, Stateless Validator & DA deployed on JAM chain to provide trustless ground for NEs' high TVL.
+          <p>
+            Execution Node belt with Solana native architecture, ensuring NEs are aligned with Solana&apos;s transaction data structure.
+            <p>
+            </p>
+            Shared Sequencer, Stateless Validator & DA deployed on JAM chain to provide trustless ground for NEs&apos; high TVL.
+          </p>
+
         </div>
       }
       {
         currentIndex === 2 && <div className="text-white text-2xl w-1/2">
           <p className='pb-12 text-3xl font-bold'>ENTER NETWORK EXTENSIONS</p>
-          Value never leaves an L1 for an NES, only data and compute.
-          NES allows for code to be written one time, and deployed anywhere
+          <p>        Value never leaves an L1 for an NES, only data and compute.
+            <p>
+            </p>
+            NES allows for code to be written one time, and deployed anywhere</p>
 
         </div>
       }
