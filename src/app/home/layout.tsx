@@ -23,6 +23,14 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
                 <p>The First Solan Native</p>
                 <p  >Network Extension Service:</p>
                 <p className="text-[#FC15EF]">Making SVM Portabl</p>
+
+                {/* <p>THE FIRST</p>
+                <p>SOLANA-NATIVE <span className="text-[#0AEAF1]">SVM-POWERED</span></p>
+                <p className="text-[#0AEAF1]">NETWORK EXTENSION SERVICE</p>
+                <p>WITH <span className="text-[#FC15EF]">CRYPTOGRAPHIC</span></p>
+                <p className="text-[#FC15EF]">SETTLEMENT PROTOCOLS.</p> */}
+                <p className="text-xl font-thin mt-8">Customizable, Decentralized & Infrastructure Compatible</p>
+{/* >>>>>>> parent of 890238b (1.10) */}
             </div>
         </div>
         <div className="mt-16 px-16">
