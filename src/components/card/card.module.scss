@@ -4,6 +4,7 @@
     --tw-shadow-colored: inset 0 0 15px 0 var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     z-index: 1;
+    transition: transform 0.8s ease; /* 添加平滑过渡 */
 
     &:hover{
         z-index: 2;

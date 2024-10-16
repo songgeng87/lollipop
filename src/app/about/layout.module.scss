@@ -6,25 +6,40 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
+    .fadeInText {
+        font-family: Arial, sans-serif;
+        opacity: 0;
+        animation: fadeIn 4s forwards;  /* 4秒内渐渐显示 */
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
     .mini{
         display: none;
         @media screen and (max-width: 967px){
             display: block;
-        } 
+        }
     }
 
     .miniFlex{
         display: none;
         @media screen and (max-width: 967px){
             display: flex;
-        } 
+        }
     }
 
     .max{
         display: none;
         @media screen and (min-width: 967px){
             display: block;
-        } 
+        }
     }
 
     .gradient-pink {
@@ -41,11 +56,11 @@
         // --tw-shadow-colored: inset 0 0 15px 0 var(--tw-shadow-color);
         box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
         z-index: 1;
-    
+
         &:hover{
             z-index: 2;
             --tw-shadow: inset 0 0 15px 0 #FC15EF;
-    
+
             &::before {
                 position: absolute;
                 content: '';
@@ -67,11 +82,11 @@
         position: relative;
         box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
         z-index: 1;
-    
+
         &:hover{
             z-index: 2;
             --tw-shadow: inset 0 0 15px 0 #0AEAF1;
-    
+
             &::before {
                 position: absolute;
                 content: '';
