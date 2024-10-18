@@ -12,6 +12,15 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        'SebneueSemiHeavy': ['SebneueSemiHeavy', 'sans-serif'],
+        'SebneueSemiBold': ['SebneueSemiBold', 'sans-serif'],
+        'ItalianRegular': ['ItalianRegular', 'sans-serif'],
+        'ItalianThin': ['ItalianThin', 'sans-serif'],
+        'ItalianMedium': ['ItalianMedium', 'sans-serif'],
+        'ItalianDemibold': ['ItalianDemibold', 'sans-serif'],
+        'ItalianLight': ['ItalianLight', 'sans-serif'],
+      },
     },
   },
   plugins: [

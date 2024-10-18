@@ -14,10 +14,50 @@
   }
 }
 
+@font-face {
+  font-family: 'ItalianPlateNo1ExpandedBold';
+  src: url('/src/app/fonts/Italian Plate No1 Expanded Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SebneueSemiHeavy';
+  src: url('/src/app/fonts/SebneueHeavy-gVG1.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SebneueSemiBold';
+  src: url('/src/app/fonts/Italian Plate No1 Expanded.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ItalianRegular';
+  src: url('/src/app/fonts/Italian Plate No1 Expanded.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ItalianMedium';
+  src: url('/src/app/fonts/Italian Plate No1 Expanded Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ItalianThin';
+  src: url('/src/app/fonts/Italian Plate No1 Expanded Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ItalianLight';
+  src: url('/src/app/fonts/Italian Plate No1 Expanded Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ItalianDemibold';
+  src: url('/src/app/fonts/Italian Plate No1 Expanded Demibold.ttf') format('truetype');
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'ItalianPlateNo1ExpandedBold', sans-serif;
 }
 
 @layer utilities {

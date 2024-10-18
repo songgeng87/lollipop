@@ -9,3 +9,12 @@
         flex-wrap: wrap;
     }
 }
+
+@font-face {
+  font-family: 'ItalianPlateNo1ExpandedBold';
+  src: url('../../../src/app/fonts/Italian\ Plate\ No1\ Expanded\ Bold.ttf') format('truetype');
+}
+
+.text-white {
+  font-family: 'ItalianPlateNo1ExpandedBold', sans-serif;
+}
