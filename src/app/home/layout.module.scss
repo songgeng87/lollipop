@@ -1,0 +1,79 @@
+.container {
+  background-image: url("/images/planet.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+
+  .videoPage {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 831px;
+    padding-top: 518px;
+    background-image: url("/images/VideoPage.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    line-height: 54px;
+    font-weight: bold;
+    white-space: -2%;
+  }
+
+  .shadow-inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    --tw-shadow: inset 0 0 15px 0 #FC15EF;
+    --tw-shadow-colored: inset 0 0 15px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .gradient {
+    background: radial-gradient(#5A0A93 0%, #4D0A91 35%, #320A8C 95%);
+  }
+
+  .banner {
+    width: 100%;
+    background-image: url("/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .slideText1 {
+    opacity: 0; /* 初始透明度 */
+    transform: translateY(300px); /* 初始位置：屏幕下方 */
+    animation: slideUp 2s ease forwards; /* 动画效果 */
+  }
+
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100px); /* 从屏幕下方开始 */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* 滑动到正常位置 */
+    }
+  }
+
+  .slideText {
+    opacity: 0; /* 初始透明度 */
+    transform: translateY(300px); /* 初始位置：屏幕下方 */
+    transition: opacity 1s ease, transform 1s ease; /* 平滑的过渡效果 */
+  }
+
+  .slideText.active {
+    opacity: 1;
+    transform: translateY(0); /* 滑动到正常位置 */
+  }
+
+  .button {
+    background: rgba(90, 10, 147, 0.4);
+
+    &:hover{
+      background: #FC15EF;
+    }
+
+    &:active{
+      background: #FC15EF;
+    }
+  }
+}
