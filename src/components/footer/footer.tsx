@@ -5,11 +5,11 @@ import {useState} from "react";
 import clsx from "clsx";
 
 export default function Footer() {
-    const [src1, setSrc1] = useState('/images/Twitter.png');
-    const [src2, setSrc2] = useState('/images/DC.png');
-    const [src3, setSrc3] = useState('/images/Telegram.png');
-    const [src4, setSrc4] = useState('/images/GitHub.png');
-    const [src5, setSrc5] = useState('/images/Link.png');
+    const [src1, setSrc1] = useState('/images/Twitter.svg');
+    const [src2, setSrc2] = useState('/images/DC.svg');
+    const [src3, setSrc3] = useState('/images/Telegram.svg');
+    const [src4, setSrc4] = useState('/images/GitHub.svg');
+    const [src5, setSrc5] = useState('/images/Link.svg');
 
     return <footer
         className="mt-[-15px] py-24 bg-[#320A8C] px-16 pt-24 rounded-t-3xl border border-b-[24px] border-[#FC15EF]">
@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
         <div className="mt-16">
             <div className="flex gap-4 text-2xl items-center">
-                <Image width={168} height={42} src="/images/logo.png" alt="logo"/>
+                <Image width={168} height={42} src={'/images/logo.svg'} alt="logo"/>
             </div>
             <div className="mt-8 flex justify-between items-center">
                 <div className="flex gap-x-16 items-center">

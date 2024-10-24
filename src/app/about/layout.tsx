@@ -7,7 +7,7 @@ import {useState} from "react";
 export default function AboutLayout() {
 
     return <div className={clsx(styles.container, 'text-white')}>
-        <div className="px-16 py-48 min-h-[960px]">
+        <div className="px-16 py-48">
             <div className="w-[98%] flex gap-2 items-center">
                 <p className={clsx(styles.fadeInText, "text-[64px] font-SebneueSemiHeavy font-bold")}>ABOUT US</p>
                 <p className={clsx(styles.max, styles.fadeInText, "grow border-b border-[#FC15EF]")}></p>

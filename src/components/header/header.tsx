@@ -33,7 +33,7 @@ export default function Header() {
     }, [lastScrollTop]);
 
     return <div
-        className={clsx((scrolled ? '' : ''), 'h-[80px] flex justify-between items-center bg-[#320A8C] border-b border-[#5B3BA3] fixed left-0 top-0 w-screen z-10')}>
+        className={clsx((lastScrollTop > 0 ? ['opacity-60'] : ''), 'h-[80px] flex justify-between items-center bg-[#320A8C] border-b border-[#5B3BA3] fixed left-0 top-0 w-screen z-10')}>
         <ul className="menu-horizontal rounded-box px-16 bg-[#320A8C] text-white gap-16 flex-nowrap font-SebneueSemiBold font-semibold">
             <li className='hover:cursor-pointer hover:text-[#0AEAF1] text-[14px] '>
                 <Link href="/home">Home</Link></li>

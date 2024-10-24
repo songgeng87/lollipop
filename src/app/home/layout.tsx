@@ -49,42 +49,42 @@ export default function HomeLayout({children}: { children: React.ReactNode }) {
 
     return <div className={clsx(styles.container, "bg-[#320A8C] mt-[80px] w-[100%] text-[16px] ")}>
 
-        <div className={clsx("flex px-16 pt-16 overflow-x-hidden flex justify-between")}>
-            <div
-                className={clsx(styles.slideText1, "flex flex-col gap-1 text-4xl font-bold text-white pt-6")}>
-                <div className="font-ItalianRegular font-normal text-[28px] text-white pb-8">
-                    <p className='leading-tight'>Take your</p>
-                    <p className="text-[#0AEAF1] font-ItalianDemibold font-bold leading-tight">Smart Contract</p>
-                    <p className='leading-tight'>anywhere.</p>
-                </div>
+        <div className={clsx(styles.firstBar)}>
+            <div className={clsx("flex px-16 pt-16 overflow-x-hidden flex justify-between")}>
+                <div
+                    className={clsx(styles.slideText1, "flex flex-col gap-1 text-4xl font-bold text-white pt-6")}>
+                    <div className="font-ItalianRegular font-normal text-[28px] text-white pb-8">
+                        <p className='leading-tight'>Take your</p>
+                        <p className="text-[#0AEAF1] font-ItalianDemibold font-bold leading-tight">Smart Contract</p>
+                        <p className='leading-tight'>anywhere.</p>
+                    </div>
 
-                <p className='font-SebneueSemiHeavy mb-2 text-[50px]'>The First Solana Native</p>
-                <p className='font-SebneueSemiHeavy mb-2 text-[50px]'>Network Extension Service:</p>
-                <p className=" font-SebneueSemiHeavy text-[#FC15EF] text-[50px]">Making SVM Portable</p>
+                    <p className='font-SebneueSemiHeavy mb-2 text-[50px]'>The First Solana Native</p>
+                    <p className='font-SebneueSemiHeavy mb-2 text-[50px]'>Network Extension Service:</p>
+                    <p className=" font-SebneueSemiHeavy text-[#FC15EF] text-[50px]">Making SVM Portable</p>
 
-                {/* <p>THE FIRST</p>
+                    {/* <p>THE FIRST</p>
                 <p>SOLANA-NATIVE <span className="text-[#0AEAF1]">SVM-POWERED</span></p>
                 <p className="text-[#0AEAF1]">NETWORK EXTENSION SERVICE</p>
                 <p>WITH <span className="text-[#FC15EF]">CRYPTOGRAPHIC</span></p>
                 <p className="text-[#FC15EF]">SETTLEMENT PROTOCOLS.</p> */}
-                <p className="font-normal mt-3 font-ItalianRegular text-[22px]">Customizable, Decentralized &
-                    Infrastructure
-                    Compatible</p>
+                    <p className="font-normal mt-3 font-ItalianRegular text-[22px]">Customizable, Decentralized &
+                        Infrastructure
+                        Compatible</p>
+                </div>
+            </div>
+            <div className="h-[180px] mt-14 px-16">
+                <button
+                    className={clsx(styles.slideText1,styles.button, "text-[16px] w-[220px] h-[60px]  border-[#0AEAF1] border border-b-[6px] text-white rounded-full px-8 py-4 cursor-pointer font-ItalianDemibold font-semibold")}>
+
+                    <Link target="_blank" href="https://forms.gle/s7AEykXt6wUExP948">REQUEST A DEMO</Link>
+
+                </button>
             </div>
         </div>
-        <div className="h-[180px] mt-14 px-16">
-            <button
-                className={clsx(styles.slideText1, "text-[16px] w-[200px] h-[60px] active:bg-[#FC15EF] hover:bg-[#FC15EF] border-[#0AEAF1] border border-b-[6px] text-white rounded-full px-8 py-4 cursor-pointer bg-[rgba(90,10,147,0.4)] active:opacity-80 font-ItalianDemibold font-semibold")}>
-
-                <Link target="_blank" href="https://forms.gle/s7AEykXt6wUExP948">Request a demo</Link>
-
-            </button>
-        </div>
         <div className={clsx(styles.videoPage)}>
-            <div className='text-[#ffffff] w-[640px] text-center text-[50px] font-SebneueSemiHeavy'>Value Never Leaves
-                Layer 1
-                For A Network Extension (NE),
-                Only Data And Compute.
+            <div className='text-[#ffffff] w-[750px] text-center text-[50px] font-SebneueSemiHeavy'>
+                Value Never Leaves Layer 1 For A Network Extension (NE), Only Data And Compute.
             </div>
         </div>
         <div className="bg-[#5A0A93] min-h-screen px-16 p-24">
@@ -118,7 +118,8 @@ export default function HomeLayout({children}: { children: React.ReactNode }) {
                  className={clsx(styles.slideText, styles.active, " text-white")}>
                 <p className="fn-SebneueSemiHeavy text-[40px] font-bold">EXTEND SOLANA</p>
                 <p className="fn-SebneueSemiHeavy text-[40px] font-bold mt-[-12px]">WITH LOLLIPOP</p>
-                <p className="font-ItalianRegular text-[20px] leading-snug mt-[40px] max-w-[500px]">We aim to extend Solana
+                <p className="font-ItalianRegular text-[20px] leading-snug mt-[40px] max-w-[500px]">We aim to extend
+                    Solana
                     mainnet by
                     facilitating the deployment of Solana-native
                     NEs. This initiative is to provide developers
@@ -130,10 +131,11 @@ export default function HomeLayout({children}: { children: React.ReactNode }) {
                  className={clsx(styles.slideText, styles.active, "mt-[80px] flex items-center justify-between text-[#0AEAF1] font-bold")}>
                 <div>
                     <p className="fn-SebneueSemiHeavy text-[46px]">FAST DEPLOY</p>
-                    <p className="fn-SebneueSemiHeavy text-[46px] mt-[-20px]">A CUSTOMIZABLE SOLANA NETWORK EXTENSION</p>
+                    <p className="fn-SebneueSemiHeavy text-[46px] mt-[-20px]">A CUSTOMIZABLE SOLANA NETWORK
+                        EXTENSION</p>
                 </div>
                 <button
-                    className={clsx(styles.button, "text-[16px] w-[220px] h-[60px]  border-[#0AEAF1] border border-b-[6px] text-white rounded-full px-8 py-4 cursor-pointer active:opacity-80 font-ItalianDemibold font-semibold")}>
+                    className={clsx(styles.button, "text-[16px] w-[220px] h-[60px]  border-[#0AEAF1] border border-b-[6px] text-white rounded-full px-[8px] py-[4px] cursor-pointer font-ItalianDemibold font-semibold")}>
                     <Link target="_blank" href="https://calendly.com/team-lollipop/30min">BOOK A MEETING</Link>
                 </button>
             </div>
