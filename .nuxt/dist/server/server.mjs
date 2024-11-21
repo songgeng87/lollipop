@@ -1,0 +1,1 @@
+export { default } from "file:///Users/songgeng/Project/lollipop/lollipop/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
