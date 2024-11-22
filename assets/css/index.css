@@ -5,9 +5,17 @@ html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textar
 	margin:0;
 	padding:0;
 }
+@font-face {
+    font-family: 'Space_Grotesk';
+    src: url('@/assets/font/SpaceGrotesk-Regular.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Schibsted_Grotesk';
+    src: url('@/assets/font/SchibstedGrotesk-Bold.ttf') format('ttf');
+}
 
 body{
-	font-family:"思源黑体","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    font-family:"思源黑体","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   font-size: 14px;
   color: #333;
   min-width: 1350px;
@@ -76,4 +84,7 @@ input:-ms-input-placeholder{color:#b3b7c0;}
 input::-webkit-input-placeholder{color:#b3b7c0;}
 input:-moz-placeholder{color:#b3b7c0;}
 input::-moz-placeholder{color:#b3b7c0;}
+
+
+
 

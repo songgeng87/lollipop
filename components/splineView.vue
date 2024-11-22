@@ -37,7 +37,7 @@ onMounted(() => {
 <style>
 #canvas3d {
 position: absolute;
-    left: 20%;
+    /* left: 20%; */
     top: 0%;
   /* width: 120vw; */
   /* height: 10%; */

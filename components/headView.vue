@@ -29,6 +29,8 @@ const  Github = ref('Github-2')
 
 <template>
   <div class="header flex justify-between relative" :style="`opacity:${lastScrollDirection ? '.6' : '1'};`">
+    <div class="absluet"></div>
+
     <ul class="left-header-list">
       <li class="list-item">HOME</li>
       <li class="list-item">ABOUT</li>
@@ -37,19 +39,22 @@ const  Github = ref('Github-2')
     </ul>
 
     <div class="logo-center absolute left-1/2 -translate-x-1/2">
-        <svgIcon name="logo"></svgIcon>
+        <svgIcon :name="lastScrollDirection ? 'logo Mark' :'logo'"></svgIcon>
       </div>
     <div class="right-wrap">
       <ul class="right-header-list">
-        <li  class="item-svg"><a href="https://x.com/LollipopHQ"><svgIcon :name="Twitter"></svgIcon></a></li>
-        <li class="item-svg"><a href="t.me/lollipopbuilders"><svgIcon :name="Telegram"></svgIcon></a></li>
-        <li class="item-svg"><svgIcon :name="Github"></svgIcon></li>
+        <li  class="item-svg"><NuxtLink target="_blank" to="https://x.com/LollipopHQ"><svgIcon :name="Twitter"></svgIcon></NuxtLink></li>
+        <li class="item-svg"><NuxtLink target="_blank" to="t.me/lollipopbuilders"><svgIcon :name="Telegram"></svgIcon></NuxtLink></li>
+        <li class="item-svg"><NuxtLink target="_blank" to="https://github.com/LollipopBuilders"><svgIcon :name="Github"></svgIcon></NuxtLink></li>
       </ul>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.absluet{
+  position: absolute;
+}
 .header {
   position: fixed;
   top: 0;
@@ -71,7 +76,7 @@ const  Github = ref('Github-2')
     margin-right: 125px;
 
     .list-item {
-      font-family: Space Grotesk;
+      font-family: 'Space_Grotesk','sans-serif';
       font-size: 16px;
       font-weight: normal;
       margin-right: 40px;

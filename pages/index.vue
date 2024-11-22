@@ -6,7 +6,7 @@
 <template>
   <div class="index-box">
     <div class="one-box">
-      <splineView></splineView>
+      <!-- <splineView></splineView> -->
       <div class="one-box-container">
         <div class="one-text">
           The First <br />
@@ -21,8 +21,8 @@
         <div class="button-footer">
           <div class="footer-left">
             <div class="left-button">WHITE PAPER</div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6RbPCxaw83PaLz-v-fsJmkFsSPBEBysaNBNlDXYmNBKq0XA/viewform">
-            <div class="left-button">REQUEST A DEMO</div></a>
+            <NuxtLink target="_blank" to="https://docs.google.com/forms/d/e/1FAIpQLSc6RbPCxaw83PaLz-v-fsJmkFsSPBEBysaNBNlDXYmNBKq0XA/viewform">
+            <div class="left-button">REQUEST A DEMO</div></NuxtLink>
           </div>
           <div class="right-text">Take your <span>Program</span> anywhere.</div>
         </div>
@@ -30,11 +30,11 @@
     </div>
     <div class="tow-box">
       <div class="top-banner justify-center">
-        <splineBox></splineBox>
+        <!-- <splineBox></splineBox> -->
       </div>
 
-      <div class="title">Network Extension:</div>
-      <div class="text-container">
+      <div class="title mb-[20px]">Network Extension:</div>
+      <div class="text-container mb-[20px]">
         Off-chain execution environment,<br />
         extends the boundaries of computation and data.
       </div>
@@ -48,10 +48,10 @@
         Lollipop NES
       </div>
 
-      <div class="list-card">
+      <div class="list-card text-[white] hover:text-[#FC15EF]">
         <div class="card-item">
           <div class="card-container">
-            <div class="top-svg">
+            <div  class="top-svg  ">
               <svgIcon :name="1"></svgIcon>
             </div>
 
@@ -68,9 +68,9 @@
           </div>
         </div>
 
-        <div class="card-item">
+        <div class="card-item text-[white] hover:text-[#FC15EF]">
           <div class="card-container">
-            <div class="top-svg">
+            <div class="top-svg ">
               <svgIcon :name="2"></svgIcon>
             </div>
 
@@ -84,9 +84,9 @@
             </div>
           </div>
         </div>
-        <div class="card-item">
+        <div class="card-item text-[white] hover:text-[#FC15EF]">
           <div class="card-container">
-            <div class="top-svg">
+            <div class="top-svg ">
               <svgIcon :name="3"></svgIcon>
             </div>
 
@@ -100,25 +100,24 @@
             </div>
           </div>
         </div>
-        <div class="card-item">
+        <div class="card-item text-[white] hover:text-[#FC15EF]">
           <div class="card-container">
-            <div class="top-svg">
-              <svgIcon color="fff" :name="4"></svgIcon>
+            <div class="top-svg ">
+              <svgIcon :name="4"></svgIcon>
             </div>
 
             <div class="bottom-text">
               <div class="text-title">LIMITLESS <br />TVL</div>
               <div class="mini-text">
-                Polkadot Cloud, as platform for shared <br />
-                sequencer, DA and validator, provides <br />trustless ground for NEs.
+                Polkadot Cloud, as platform for shared sequencer, DA and validator, provides trustless ground and customization for NEs.
               </div>
             </div>
           </div>
         </div>
-        <div class="card-item">
+        <div class="card-item text-[white] hover:text-[#FC15EF]">
           <div class="card-container">
             <div class="top-svg">
-              <svgIcon color="fff" :name="5"></svgIcon>
+              <svgIcon :name="5"></svgIcon>
             </div>
 
             <div class="bottom-text">
@@ -131,7 +130,7 @@
             </div>
           </div>
         </div>
-        <div class="card-item">
+        <div class="card-item text-[white] hover:text-[#FC15EF]">
           <div class="card-container">
             <div class="top-svg">
               <svgIcon :name="6"></svgIcon>
@@ -157,10 +156,11 @@
         <div>Tech Features</div>
       </div>
       <div class="text2">SEAMLESS INTEGRATION WITH SOLANA MAINNET</div>
-      <div class="h-[460px] bg-[url(@/assets/img/1-默认.png)] bg-contain bg-center bg-no-repeat mb-[100px]">
+      <div class="h-[460px] bg-[url(@/assets/img/1-默认.png)] hover:bg-[url(@/assets/img/1-悬停效果.png)] bg-contain bg-center bg-no-repeat mb-[100px]">
       </div>
+
       <div class="h-[488px] mb-[100px] flex">
-            <div class="flex-[1] bg-[url(@/assets/img/2-默认.png)] bg-contain bg-no-repeat">
+            <div class="flex-[1] bg-[url(@/assets/img/2-默认.png)] hover:bg-[url(@/assets/img/2-悬停效果.png)] bg-contain bg-no-repeat">
                 
             </div>
             <div class="flex-1 flex flex-col justify-center items-end gap-[40px]">
@@ -168,13 +168,14 @@
                 <div class="text-[22px] text-[white] leading-[30px]">Lollipop is the first that has developed the complete Cryptographic Settlement Protocol for Solana Network Extension.</div>
             </div>
       </div>
+
       <div class="h-[488px] flex justify-between">
             
             <div class="flex-1 flex flex-col justify-center items-start gap-[40px]">
                 <div class="text-[38px] font-[800] text-[white] leading-[42px]">ENTER <br/> NETWORK EXTENSION</div>
                 <div class="text-[22px] text-[white] leading-[30px] ">Value never leaves an L1 for an NE, only data and compute.<br/><br/> NE allows code to be written one time, and deployed anywhere.</div>
             </div>
-            <div class="flex-[1] bg-[url(@/assets/img/3-默认.png)] bg-contain bg-no-repeat bg-right">
+            <div class="flex-[1] bg-[url(@/assets/img/3-默认.png)] hover:bg-[url(@/assets/img/3-悬停效果.png)] bg-contain bg-no-repeat bg-right">
                 
             </div>
       </div>
@@ -191,8 +192,9 @@
             <div class="flex">
                 <div class="text-[#0AEAF1] font-[800] text-[64px] leading-[68px] flex-1">Fast Deploy A Customizable Solana Network Extension</div>
                 <div class="w-1/4 flex items-center justify-center">
-                <a href="https://calendly.com/team-lollipop/30min">
-                    <div class="border rounded-[60px] px-[29px] cursor-pointer py-[20px] border-[#0AEAF1] hover:bg-[#FC15EF] inline-block text-[16px] font-bold leading-[20px] text-white shadow-[0px_5px_0px_0px_#0AEAF1;]">BOOK A MEETING</div></a>
+                <NuxtLink target="_blank" to="https://calendly.com/team-lollipop/30min">
+                    <div class="border rounded-[60px] px-[29px] cursor-pointer py-[20px] border-[#0AEAF1] hover:bg-[#FC15EF] inline-block text-[16px] font-bold leading-[20px] text-white shadow-[0px_5px_0px_0px_#0AEAF1;]">BOOK A MEETING</div>
+                  </NuxtLink>
                 </div>
             </div>
         </div>
@@ -202,7 +204,7 @@
 
 <style lang="scss" scoped>
 .mini-text {
-  font-family: Space Grotesk;
+  font-family: 'Space_Grotesk','sans-serif';
   font-size: 18px;
   font-weight: 300;
   line-height: 22px;
@@ -211,7 +213,7 @@
   color: #ffffff;
 }
 .text-title {
-  font-family: Schibsted Grotesk;
+  font-family: 'Schibsted_Grotesk','sans-serif';
   font-size: 24px;
   font-weight: 800;
   line-height: 28px;
@@ -261,7 +263,7 @@
   padding: 200px 85px;
   background: #5a0a93;
   .title-three {
-    font-family: Schibsted Grotesk;
+    font-family: 'Schibsted_Grotesk','sans-serif';
     font-size: 64px;
     font-weight: 800;
     line-height: 68px;
@@ -279,7 +281,7 @@
   display: flex;
 }
 .mini-container {
-  font-family: Space Grotesk;
+  font-family: 'Space_Grotesk','sans-serif';
   font-size: 20px;
   font-weight: 300;
   line-height: 28px;
@@ -288,7 +290,7 @@
   color: #ffffff;
 }
 .text-container {
-  font-family: Space Grotesk;
+  font-family:'Space_Grotesk','sans-serif';
   font-size: 40px;
   font-weight: bold;
   line-height: 48px;
@@ -297,7 +299,7 @@
   color: #ffffff;
 }
 .title {
-  font-family: Schibsted Grotesk;
+  font-family: 'Schibsted_Grotesk','sans-serif';
   font-size: 64px;
   font-weight: 800;
   line-height: 68px;
@@ -306,19 +308,19 @@
   color: #ffffff;
 }
 .tow-box {
-  background: #311689;
+  background: #320A8C;
   padding: 100px 85px 150px;
 }
 .right-text {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 28px;
   // text-align: right;
   letter-spacing: 0em;
   color: #ffffff;
   span {
     color: #0aeaf1;
-
+    font-weight: 500;
     /* anywhere. */
   }
 }
@@ -339,6 +341,7 @@
       line-height: 60px;
       border-radius: 60px;
       opacity: 1;
+      font-weight: bold;
       margin-right: 20px;
       background: rgba(90, 10, 147, 0.4);
       color: #ffffff;
@@ -371,7 +374,7 @@
         height: 24px;
         opacity: 1;
 
-        font-family: Space Grotesk;
+        font-family: 'Space_Grotesk','sans-serif';
         font-size: 20px;
         font-weight: 300;
         line-height: 24px;
@@ -383,8 +386,8 @@
         width: 635px;
         height: 44px;
         opacity: 1;
-
-        font-family: Schibsted Grotesk;
+        margin-bottom: 10px;
+        font-family: 'Schibsted_Grotesk','sans-serif';
         font-size: 40px;
         font-weight: bold;
         line-height: 44px;
@@ -397,10 +400,10 @@
         height: 272px;
         opacity: 1;
 
-        font-family: Schibsted Grotesk;
+        font-family: 'Schibsted_Grotesk','sans-serif';
         font-size: 64px;
-        font-weight: 800;
-        line-height: 68px;
+font-weight: 800;
+line-height: 68px;
         letter-spacing: 0em;
 
         color: #ffffff;
@@ -412,7 +415,7 @@
   padding: 200px 0;
   text-align: center;
   div {
-    font-family: Schibsted Grotesk;
+    font-family: 'Schibsted_Grotesk','sans-serif';
     font-size: 64px;
     font-weight: 800;
     line-height: 68px;
@@ -423,7 +426,7 @@
 }
 .text2 {
   text-align: center;
-  font-family: Schibsted Grotesk;
+  font-family: 'Schibsted_Grotesk','sans-serif';
   font-size: 38px;
   font-weight: 800;
   line-height: 42px;

@@ -5,24 +5,42 @@
     <div class="box-container">
       <div class="left">
         <div class="nav-list">
-          <div class="nav-item">Home</div>
-          <div class="nav-item">Research</div>
+          <div class="nav-item">HOME</div>
+          <div class="nav-item">RESEARCH</div>
 
-          <div class="nav-item">About</div>
+          <div class="nav-item">ABOUT</div>
 
           <div
             class="nav-item opacity-[.8]"
-            style="font-size: 14px; line-height: 18px; color: #ccffffff; font-weight: 500"
+            style="
+              font-family: 'Space Grotesk', 'sans-serif';
+              font-size: 14px;
+              font-weight: normal;
+              line-height: 18px;
+              display: flex;
+              align-items: center;
+              letter-spacing: 0em;
+              color: rgba(255, 255, 255, 0.8);
+              white-space: nowrap;
+            "
           >
-            White <br />
-            paper
+            White paper
           </div>
 
-          <div class="nav-item">Builders</div>
+          <div class="nav-item">BUILDERS</div>
 
           <div
             class="nav-item text-[14px] opacity-[.8] leading-[18px] text-[#ccFFFFFF]"
-            style="font-size: 14px; font-weight: 500; line-height: 18px; color: #ccffffff"
+            style="
+              font-family: 'Space Grotesk', 'sans-serif';
+              font-size: 14px;
+              font-weight: normal;
+              line-height: 18px;
+              display: flex;
+              align-items: center;
+              letter-spacing: 0em;
+              color: rgba(255, 255, 255, 0.8);
+            "
           >
             Doc
           </div>
@@ -34,38 +52,46 @@
           <span>Find us on</span>
 
           <div class="svg-logo-icon">
-            <a href="https://x.com/LollipopHQ">
+            <NuxtLink to="https://x.com/LollipopHQ" target="_blank">
               <svgIcon class="icon" name="X"></svgIcon>
               <svgIcon class="icon_active" name="X-1"></svgIcon
-            ></a>
+            ></NuxtLink>
           </div>
           <div class="svg-logo-icon">
-            <a href="https://discord.gg/QhjDwp3z ">
+            <NuxtLink to="https://discord.gg/QhjDwp3z " target="_blank">
               <svgIcon class="icon" name="DC"></svgIcon>
-              <svgIcon class="icon_active" name="DC-2"></svgIcon>
-            </a>
+              <svgIcon class="icon_active" name="DC-Click"></svgIcon>
+            </NuxtLink>
           </div>
           <div class="svg-logo-icon">
-            <a href="t.me/lollipopbuilders ">
+            <NuxtLink target="_blank" to="https://twitter.com">
               <svgIcon class="icon" name="Telegram-2"></svgIcon>
-              <svgIcon class="icon_active" name="Telegram"></svgIcon>
-            </a>
+              <svgIcon class="icon_active" name="TG-Click"></svgIcon>
+            </NuxtLink>
           </div>
           <div class="svg-logo-icon">
-            <svgIcon class="icon" name="Github-2"></svgIcon>
-            <svgIcon class="icon_active" name="Github"></svgIcon>
+            <NuxtLink target="_blank" to="https://github.com/LollipopBuilders">
+              <svgIcon class="icon" name="Github-2"></svgIcon>
+              <svgIcon class="icon_active" name="GitHub-Click"></svgIcon>
+            </NuxtLink>
           </div>
           <div class="svg-logo-icon">
-            <a href="https://www.linkedin.com/company/lollipop-builders/">
+            <NuxtLink
+              target="_blank"
+              to="https://www.linkedin.com/company/lollipop-builders"
+            >
               <svgIcon class="icon" name="Link-2"></svgIcon>
-              <svgIcon class="icon_active" name="Link"></svgIcon>
-            </a>
+              <svgIcon class="icon_active" name="Link-Click"></svgIcon>
+            </NuxtLink>
           </div>
           <div class="svg-logo-icon">
-            <a href="https://www.youtube.com/@LollipopBuilders">
+            <NuxtLink
+              target="_blank"
+              to="https://www.youtube.com/@LollipopBuilders"
+            >
               <svgIcon class="icon" name="YouTube"></svgIcon>
               <svgIcon class="icon_active" name="YouTube-1"></svgIcon>
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -84,7 +110,7 @@
 
 <style lang="scss" scoped>
 .bottom-title {
-  font-family: Space Grotesk;
+  font-family: "Space_Grotesk", 'sans-serif';
   font-size: 10px;
   font-weight: 300;
   line-height: 14px;
@@ -107,7 +133,7 @@
     margin-left: 20px;
     width: 170px;
     height: 50px;
-    font-family: Schibsted Grotesk;
+    font-family: "Schibsted_Grotesk", 'sans-serif';
     font-size: 16px;
     font-weight: bold;
     line-height: 20px;
@@ -142,6 +168,16 @@
     border: 1px solid rgba(255, 255, 255, 0.4);
     display: flex;
     overflow: hidden;
+    &:hover {
+      border-radius: 60px;
+      opacity: 1;
+      background: rgba(90, 10, 147, 0.4);
+      box-sizing: border-box;
+      border: 1px solid #fc15ef;
+      /* GlassS-R */
+      backdrop-filter: blur(30px);
+      box-shadow: inset 0px 0px 6px 0px #fc15ef;
+    }
     input {
       outline: none;
       border: none;
@@ -160,7 +196,7 @@
 }
 .footer-list {
   span {
-    font-family: Space Grotesk;
+    font-family: "Space_Grotesk", 'sans-serif';
     font-size: 14px;
     font-weight: 300;
     line-height: 18px;
@@ -195,13 +231,13 @@
     flex-wrap: wrap;
     .nav-item {
       width: 74px;
-      font-family: Space Grotesk;
+      font-family: "Space_Grotesk", 'sans-serif';
       font-size: 16px;
       font-weight: bold;
       line-height: 20px;
       display: flex;
       align-items: center;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       letter-spacing: 0em;
       color: #ffffff;
       margin-bottom: 20px;
@@ -210,6 +246,8 @@
 }
 .bottom-box {
   background: #320a8c;
+  // border: 1px solid #fc15ef;
+  border-bottom: 4px solid #fc15ef;
   .box-container {
     display: flex;
     justify-content: space-between;
@@ -223,15 +261,15 @@
     box-shadow: 0px 10px 0px 0px #fc15ef;
   }
 }
-.icon_active{
-    display: none;
+.icon_active {
+  display: none;
 }
-.svg-logo-icon:hover{
-    .icon{
-        display: none;
-    }
-    .icon_active{
-        display: block;
-    }
+.svg-logo-icon:hover {
+  .icon {
+    display: none;
+  }
+  .icon_active {
+    display: block;
+  }
 }
 </style>
