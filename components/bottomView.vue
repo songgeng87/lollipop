@@ -70,7 +70,7 @@
             </NuxtLink>
           </div>
           <div class="svg-logo-icon">
-            <NuxtLink target="_blank" to="https://github.com/LollipopBuilders">
+            <NuxtLink target="_blank" to="https://github.com">
               <svgIcon class="icon" name="Github-2"></svgIcon>
               <svgIcon class="icon_active" name="GitHub-Click"></svgIcon>
             </NuxtLink>
