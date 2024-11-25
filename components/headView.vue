@@ -15,7 +15,6 @@ const  Github = ref('Github-2')
      lastScrollDirection.value = false;
    }
    lastScrollTop = scrollTop;
-   console.log(lastScrollDirection.value)
  };
   
  onMounted(() => {
@@ -29,22 +28,22 @@ const  Github = ref('Github-2')
 
 <template>
   <div class="header flex justify-between relative" :style="`opacity:${lastScrollDirection ? '.6' : '1'};`">
-    <div class="absluet"></div>
+    <div class="absolute"></div>
 
     <ul class="left-header-list">
-      <li class="list-item">HOME</li>
-      <li class="list-item">ABOUT</li>
+      <li class="list-item"><NuxtLink to="/">HOME</NuxtLink> </li>
+      <li class="list-item"><NuxtLink to="/about">ABOUT</NuxtLink> </li>
       <li class="list-item">BUILDERS</li>
-      <li class="list-item">RESEARCH</li>
+      <li class="list-item"><NuxtLink to="/research">RESEARCH</NuxtLink></li>
     </ul>
 
     <div class="logo-center absolute left-1/2 -translate-x-1/2">
-        <svgIcon :name="lastScrollDirection ? 'logo Mark' :'logo'"></svgIcon>
+        <svgIcon :name="lastScrollDirection ? 'logose' :'logo'"></svgIcon>
       </div>
     <div class="right-wrap">
       <ul class="right-header-list">
         <li  class="item-svg"><NuxtLink target="_blank" to="https://x.com/LollipopHQ"><svgIcon :name="Twitter"></svgIcon></NuxtLink></li>
-        <li class="item-svg"><NuxtLink target="_blank" to="t.me/lollipopbuilders"><svgIcon :name="Telegram"></svgIcon></NuxtLink></li>
+        <li class="item-svg"><NuxtLink target="_blank" to="https://t.me/lollipopbuilders"><svgIcon :name="Telegram"></svgIcon></NuxtLink></li>
         <li class="item-svg"><NuxtLink target="_blank" to="https://github.com/LollipopBuilders"><svgIcon :name="Github"></svgIcon></NuxtLink></li>
       </ul>
     </div>
@@ -52,9 +51,6 @@ const  Github = ref('Github-2')
 </template>
 
 <style lang="scss" scoped>
-.absluet{
-  position: absolute;
-}
 .header {
   position: fixed;
   top: 0;
@@ -76,7 +72,7 @@ const  Github = ref('Github-2')
     margin-right: 125px;
 
     .list-item {
-      font-family: 'Space_Grotesk','sans-serif';
+      font-family: 'SpaceGrotesk',sans-serif;
       font-size: 16px;
       font-weight: normal;
       margin-right: 40px;
@@ -118,7 +114,7 @@ const  Github = ref('Github-2')
     }
   }
   .logo-center {
-    width: 200px;
+    // width: 200px;
     height: 50px;
     flex-shrink: 0;
   }

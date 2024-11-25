@@ -1,6 +1,6 @@
 <template>
     <div>
-      <canvas id="canvas3d-tow"></canvas>
+      <canvas id="canvas3d-bottom"></canvas>
     </div>
   </template>
   
@@ -9,11 +9,11 @@
   import { Application } from "@splinetool/runtime";
   
   onMounted(() => {
-    const canvas = document.getElementById("canvas3d-tow");
+    const canvas = document.getElementById("canvas3d-bottom");
     const spline = new Application(canvas); // 确保正确实例化
   
     spline
-      .load("https://prod.spline.design/hj-F7T33rrRRtEux/scene.splinecode")
+      .load("https://prod.spline.design/bgehw2Z4tnJtIDbj/scene.splinecode")
       .then(() => {
       //   const obj = spline.findObjectByName("Cube");
         //   console.log(obj); // 输出 Spline 对象
@@ -35,7 +35,7 @@
   </script>
   
   <style>
-  #canvas3d-tow {
+  #canvas3d-bottom {
     
     width: 100%;
     height: 100%;

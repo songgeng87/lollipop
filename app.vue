@@ -6,6 +6,7 @@
   </div>
 </template>
 <style lang="scss">
+@import 'element-plus/dist/index.css';
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;

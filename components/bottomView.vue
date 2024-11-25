@@ -13,7 +13,7 @@
           <div
             class="nav-item opacity-[.8]"
             style="
-              font-family: 'Space Grotesk', 'sans-serif';
+              font-family: 'SpaceGrotesk', sans-serif;
               font-size: 14px;
               font-weight: normal;
               line-height: 18px;
@@ -32,7 +32,7 @@
           <div
             class="nav-item text-[14px] opacity-[.8] leading-[18px] text-[#ccFFFFFF]"
             style="
-              font-family: 'Space Grotesk', 'sans-serif';
+              font-family: 'SpaceGrotesk', sans-serif;
               font-size: 14px;
               font-weight: normal;
               line-height: 18px;
@@ -58,13 +58,13 @@
             ></NuxtLink>
           </div>
           <div class="svg-logo-icon">
-            <NuxtLink to="https://discord.gg/QhjDwp3z " target="_blank">
+            <NuxtLink to="https://discord.gg/DxRXcNQp " target="_blank">
               <svgIcon class="icon" name="DC"></svgIcon>
               <svgIcon class="icon_active" name="DC-Click"></svgIcon>
             </NuxtLink>
           </div>
           <div class="svg-logo-icon">
-            <NuxtLink target="_blank" to="https://twitter.com">
+            <NuxtLink target="_blank" to="https://t.me/lollipopbuilders">
               <svgIcon class="icon" name="Telegram-2"></svgIcon>
               <svgIcon class="icon_active" name="TG-Click"></svgIcon>
             </NuxtLink>
@@ -93,6 +93,14 @@
               <svgIcon class="icon_active" name="YouTube-1"></svgIcon>
             </NuxtLink>
           </div>
+          <div class="svg-logo-icon">
+            <a
+              href="mailto:team@lollipop.builders"
+            >
+              <svgIcon class="icon" name="email"></svgIcon>
+              <svgIcon class="icon_active" name="email1"></svgIcon>
+            </a>
+          </div>
         </div>
       </div>
       <div class="right">
@@ -110,7 +118,7 @@
 
 <style lang="scss" scoped>
 .bottom-title {
-  font-family: "Space_Grotesk", 'sans-serif';
+  font-family: 'SpaceGrotesk', sans-serif;
   font-size: 10px;
   font-weight: 300;
   line-height: 14px;
@@ -133,7 +141,7 @@
     margin-left: 20px;
     width: 170px;
     height: 50px;
-    font-family: "Schibsted_Grotesk", 'sans-serif';
+    font-family: 'SpaceGrotesk', sans-serif;
     font-size: 16px;
     font-weight: bold;
     line-height: 20px;
@@ -196,7 +204,7 @@
 }
 .footer-list {
   span {
-    font-family: "Space_Grotesk", 'sans-serif';
+    font-family: 'SpaceGrotesk', sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 18px;
@@ -231,7 +239,7 @@
     flex-wrap: wrap;
     .nav-item {
       width: 74px;
-      font-family: "Space_Grotesk", 'sans-serif';
+      font-family: 'SpaceGrotesk', sans-serif;
       font-size: 16px;
       font-weight: bold;
       line-height: 20px;
@@ -271,5 +279,8 @@
   .icon_active {
     display: block;
   }
+}
+a{
+    color: transparent;
 }
 </style>

@@ -180,7 +180,7 @@ const _GRKAdMXgSx = (function(nitro) {
 
 const rootDir = "/Users/songgeng/Project/lollipop/lollipop";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[{"rel":"icon","type":"image/svg+xml","href":"logose.svg"}],"style":[],"script":[],"noscript":[]};
 
 const appRootTag = "div";
 

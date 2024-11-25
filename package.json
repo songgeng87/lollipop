@@ -12,9 +12,12 @@
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@splinetool/runtime": "^1.9.45",
+    "element-plus": "^2.8.8",
     "nuxt": "^3.14.1592",
+
     "vite-plugin-svg-icons": "^2.0.1",
     "vue": "latest",
+
     "vue-router": "latest"
   },
   "devDependencies": {
