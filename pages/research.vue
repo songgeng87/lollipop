@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted, reactive } from "vue";
-import TocList from "@/components/TocList.vue";
+import TocList from "@/components/tocList.vue";
 
 // 数据定义在主模板页，增加 `expanded` 状态
 const AList = reactive([
